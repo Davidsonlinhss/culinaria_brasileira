@@ -1,0 +1,151 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Projeto Strata</title>
+    <meta name="author" content="Davidson Linhares">
+    <meta name="descryption" content="Projeto-Strata">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    
+</head>
+
+<body>
+    <header class="main-header">
+            <nav class="main-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="#">Receitas</a>
+                    </li>
+                    <li>
+                        <a href="#">Imagens</a>
+                    </li>
+                </ul>
+            </nav>
+        
+        <h1 class="main-header-title">Culinária Brasileira</h1>
+        
+        <footer class="main-footer">
+        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFMSURBVEhL7ZS9SgNBFIU3rShE8g7aRBBsrRS0SC0pLZS8hbW2WoiCXSptraxtjZ36CBZGLcS/ZtfvzhyHFSOYmd0uH5zM3nPv3sOyYTOjKIpGnudbaIDeqZNgxxCdorYLMPAtpO9HqoW9b2jdBXGxLb8W2D/kaFrQwFu10rOgDxXRsOMZPUkvsgN4+/aOotDSTTTj3oGg7mgkgHeYEtTR7h9UGsSNjxwN7XZQT6FZel2bKZMSdK39Duo59Kn2L1KCLpXhwFr2ndFEBXHTDTpRhgN7EV2Z6N3bXJnYoAXtHwn9I40G6go612ggNqiL5rXXgT2Nlkz0bm2uTFSQwY31/xmMSdAkKBAVxI99icdi3CDYs6Ezf/1/CLrj2PgW9Y75f0F/xZ6ojV7lVQ67L/Tg7vu0hh7UqwwLQS3FePCbqEfjAB0nahetajVk2Rfm+Ch43/VcigAAAABJRU5ErkJggg=="></a>
+        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI5SURBVEhLzZQ9S1xBFIYXAmI0aiRbpQ1bKOwGIb8gSiBYxMpStBE/GiVYJF1SpU4ZxU67BCRgI4mFpg222ugPEPxIQMVlN8+58y7L1dm5o7uBfeDlzJw5c969d+9Mru2oVqv9lUrlBXEkRtQOoyLjTrWIh40v0Q9UpsGdYd9ftIYKatkY6h9Q+NltbR56XaIJtffTSsMa9DTGZZGGhWHVtRx6nxHysqrDwk9X0hz0+U6YJh67jIP5B1k5yD0mea+P5ib0GbKexFWlEpjvJWY1SNixyIS6X2gCFZjmiUW0iI5cRVKzhd4yPHUZB7kL2TlIvNaaF9bLaA49VNxAu2id5THUyXglKQ5ATa8sE9NR5b2wPo+eoX2lUpDfRN3IfkSIPlmGTVmzV2pPeKCUFzNETximXusNok3tP5zTNAh1JbSsqY9o0wLa0DQIdUtoSlMfcaZgX+mOxll8ovaNxj6in9SOxZqmQaibNWnqI9p0gWDHIgh1drk/RV+V8hFtekiwc7jpMn5Yf4cG0LVSPqL/U2u4jHrQrXNIzp7wPcNHxN8u25CU6SslGyLD2tW3xNg+mhlkr3QQZRkaXbJMTJ8rmcUptV+Ik2iMsX0431DolSZQcyY7Bwm7cf5o/b9A/23Z1SEZdSzuC/1nZFWHpN08V6ppKfS1e7tDVmlYtHu24kpbA+3OUVEWfigYRyfa0xT0OUAltQ5DvR2Nj2gPXbgWcVBvT7aN7Dr0v9IY2NyH+rOEUbe2tBu53D+hlL8PKzssyQAAAABJRU5ErkJggg=="> </a>    
+        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHHSURBVEhL7ZYtSENRGIa3hYGCWBQ0KBhMwsQmRjWIbdE/EMuCiCypxWASTApjhqlB1GBUmyALGkwGWRGDsOAEBUFEdN75nHM+vVzcvXfeDYs+8HLu+b73fRmD/YT++XVKpVLUsqxpdIZuUQ6lmLeLJcS9DvXKVQ96MMzL1Re8jWROOb/B/Akl0ToqoAGJ6eAyA0VSRp7g2zW17pg6awF1cW35DO6YtTZkOOr1ogzsO5Fl3O5geUB5tC1RHV6VvYb7FYrzGBbLF8ynjMsfvFscUYnq8LBZOWF+iWZRm1iVd0bWnuDLczhfKIMIixPtcIH9DTpCWRl5gi8n9TYME2gcXYuvaug6lnobhmuyrxl0bki9DcM+2dcMOkel3gmLtHiqhq531CzVTtiHWS6hN2MPDh0HUlseDGMohZ4lEwjy9vdbOTAkxBsYOg6lzh186u3bNJGfQ7bAYb7X/MCoPrwT6AK96oYKwFtEQ1JTOWSbCO6bGm/wvaC4RP0ho966GFpBj6bGG3z3qF8q3MHUgTLoXIUk7wtexR5qlSp/yEXRJKEsKuomF9jfoTTqlngwKGigb5BT/R9Y5Fn9+s6hERTjHhHrnyYU+gBEgndK9FluTAAAAABJRU5ErkJggg=="></a>
+        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGlSURBVEhL1ZM/L0NhFIcrxEQ0LBKJzaRNLHwAhISh4QNY0MRnMBhZGSRiMBgEAwmRsBgsIu1CJEJ8ApVI/Kl/aT3n3PM2dWvqeys8yc+95zm9709bYkKxWKwrFAqTJEvyzF5wRo5skoQWCHgpWQ9eEi2c+0KGtYibKfM1gfNzXOJSlA1UTUlL0asNCvMuSZEJcmPaC85ZlO+oBOKaS71+psB9jy484dzlcNGRdSiopmDjx09FedJrJfLXOBds/KgoEpDv5IzcmvKmogjxySXjwnxu/jHkL83LP+YOWSXH5EN8GHzFO3rQL8dg7hTJC09MKcxJsk2aTSnM3eRKnikHV3VRK7rRxm+w6yJv8pyj6iIB3YAfIX2mSuA25DmHVxHuQHYC9+OmFeYZWylVFzF3iHcwr9lKYR6zleJTlBTvYN6zlcI8aislyqJ9Wyl/uqhd5G8UtYj8X0X8uLdZxBOXQRfmlPmLkJ8W72A+5VK+nxVfxoL81lvBfe2guF/eUYI8m4sczj60T1Q/0yFyZ7vIkBLSZjUB+DhJs1giK56ZJwN2NMRiX6JbSkljPZUpAAAAAElFTkSuQmCC"></a>
+        <p>© Untitled. All rights reserved.</p>
+        </footer>   
+    </header>
+            
+            
+            
+    <main class="main-content">
+        <section class="main-content-section">
+        <h2>Comida nunca é demais, mas uma receita com amor e carinho, só aqui você encontra</h2>
+        <p>Accumsan orci faucibus id eu lorem semper.
+            Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis
+            tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit
+            enim arcu non at amet id arcu magna.
+            Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
+            <a href="#" title="Veja Mais" class="button-default">Veja mais</a>
+        </section>
+
+        <section class="main-content-section">
+            <article class="recent-works-card">
+                <h2>Top Receitas</h2>
+                <h3>Moqueca de Peixe</h3>
+                    <p>No Brasil, é prato típico especialmente dos estados do Espírito Santo, Bahia, Pará, Pernambuco e Ceará apresentando variações regionais significativas. Pode ser preparada com peixe, mariscos, crustáceos, galinha ou ovos.</p>
+                <a href="images/fulls/01.jpg">
+                    <img src="./images/fulls/01.jpg" max-width: 100% title="descrição">
+                </a>
+                    <p class="recents-works-card-title"></p>
+                    
+            
+            </article>
+            
+            <article class="recent-works-card">
+                <h3>Acarajé</h3>
+                <p>O acarajé é uma especialidade gastronômica das culinárias africana e afro-brasileira. Trata-se de um bolinho feito de massa de feijão-fradinho, cebola e sal, e frito em azeite de dendê. </p>
+                <a href="images/fulls/01.jpg">
+                    <img src="./images/fulls/02.jpg" title="descrição">
+                </a>
+                    
+                
+            </article>
+                
+            <article class="recent-works-card">
+                <a href="images/fulls/01.jpg">
+                    <img src="./images/fulls/03.jpg" title="descrição">
+                    <p class="recents-works-card-title"></p>
+                    <p>Litora cras augue vulputate, est.</p>
+                    <p>Diam congue sagittis ut augue sodales, potenti quis libero tempor. </p>
+                </a>
+            </article>
+                
+            <article class="recent-works-card">
+                <a href="images/fulls/01.jpg">
+                    <img src="./images/fulls/04.jpg" title="descrição">
+                    <p class="recents-works-card-title"></p>
+                    <p>Litora cras augue vulputate, est.</p>
+                    <p>Diam congue sagittis ut augue sodales, potenti quis libero tempor. </p>
+                </a>
+            </article>
+                  
+            <a href="#" title="Veja mais" class="button-default">Veja o portifólio completo</a>
+
+        </section>
+
+        <section class="main-content-section">
+            <h3>Envie-nos suas receitas</h3>
+            <p>Quer ver sua receita em nossas páginas? É só preencher os dados e nos enviar, rápido e fácil.</p>
+            <form class="formulario" action="#" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+                
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+                
+                <label for="mensagem">Digite sua mensagem:</label>
+                <textarea type="text" name="mensagem" id="mensagem"></textarea>
+
+                <input type="submit" value="enviar">
+            </form>
+            
+        </section>
+
+        <section class="main-content-section-maps">
+            <h2>Encontre-nos:</h2>
+            <address>
+                <p>
+                    <span>Endereço</span>
+                    27513-330 Rua L Santo Amaro Resende RJ
+                </p>
+
+                <p>
+                    <span>Telefone</span>
+                    (24)9-9956-3852
+                </p>
+
+                <p>
+                    <span>Email</span>
+                    davidson.linhares@outlook.com
+                </p>
+            </address>    
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.4650681858443!2d-44.506150985041934!3d-22.48672778522704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9e78f210bb7351%3A0xb112c3bfd141138c!2sR.+Adolfo+Marcelino+Lemos+-+Jardim+Alian%C3%A7a+II%2C+Resende+-+RJ%2C+27525-622!5e0!3m2!1spt-BR!2sbr!4v1541270618794" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+
+
+
+    </main>
+    
+</body>
+</html>
+            
+
+
+
